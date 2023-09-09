@@ -6,7 +6,6 @@ import RegisterStudent from "@/components/RegisterStudent.vue";
 <template>
 
   <RegisterStudent/>
-  <Data/>
 </template>
 
 <style scoped>

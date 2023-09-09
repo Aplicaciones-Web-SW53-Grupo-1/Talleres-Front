@@ -3,6 +3,13 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import { createI18n } from 'vue-i18n'
+import PrimeVue from "primevue/config";
+import "primevue/resources/primevue.min.css";
+import "primevue/resources/themes/lara-light-blue/theme.css";
+import Calendar from "primevue/calendar";
+import InputText from "primevue/inputtext";
+import Button from "primevue/button";
+import Password from "primevue/password";
 
 const i18n =  createI18n({
     locale:'es',
@@ -32,4 +39,9 @@ const i18n =  createI18n({
 })
 const app=createApp(App);
 app.use(i18n);
+app.use(PrimeVue);
+app.component("pv-calendar", Calendar);
+app.component("pv-input", InputText);
+app.component("pv-button", Button);
+app.component("pv-password", Password)
 app.mount('#app')

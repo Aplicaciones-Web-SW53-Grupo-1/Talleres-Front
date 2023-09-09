@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "primevue": "^3.34.1",
     "vue-i18n": "^9.3.0"
   }
 }

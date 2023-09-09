@@ -1,6 +1,14 @@
 <script >
+import Password from "primevue/password";
+
 export default {
   name: "registerStudent",
+  data(){
+    return{
+      data: new Date("01/01/2023"),
+    }
+  },
+
 }
 </script>
 
@@ -12,31 +20,31 @@ export default {
     </div>
     <div class="form-group">
       <label for="name">Name:</label>
-      <input type="text" id="name">
+      <pv-input class="input" type="text" id="name"/>
     </div>
 
     <div class="form-group">
       <label for="email">Email:</label>
-      <input type="email" id="email">
+      <pv-input class="input" type="email" id="email"/>
     </div>
 
     <div class="form-group">
       <label for="cellphone">Cellphone:</label>
-      <input type="text" id="cellphone">
+      <pv-input class="input" type="text" id="cellphone"/>
     </div>
 
     <div class="form-group">
       <label for="Birthdate">Birthdate:</label>
-      <input type="date" id="birthdate">
+      <pv-calendar v-model="data" />
     </div>
 
     <div class="form-group">
       <label for="password">Password:</label>
-      <input type="text" id="password">
+      <pv-password class="pass-input" id="password"/>
     </div>
 
     <div class="btn-register">
-      <button type="submit" value="submit">Register</button>
+      <pv-button label="Register" severity="success"/>
     </div>
 
   </div>
@@ -62,14 +70,16 @@ export default {
 .form-group {
   margin-bottom: 10px;
 }
+
 label {
   display: block;
   text-align: left;
   font-weight: bold;
   color: white;
 }
-input {
-  width: 100%;
+
+.input {
+  width: 58%;
   padding: 8px;
   border: 1px solid #000000;
   border-radius: 3px;
@@ -77,11 +87,5 @@ input {
 .btn-register{
   text-align: center;
 }
-.btn-register button{
-  padding: 15px 30px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 0.5px solid #ffffff;
-  font-size: 16px;
-}
+
 </style>
