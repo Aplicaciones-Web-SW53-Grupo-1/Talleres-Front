@@ -5,16 +5,24 @@ import App from './App.vue'
 import { createI18n } from 'vue-i18n'
 
 const i18n =  createI18n({
-    locale:'en',
+    locale:'es',
     messages:{
         es:{
             'registerS':'Registro del estudiante',
             'registerT':'Registro del Tutor',
+            'Schedule':'Horario',
+            'Monday':'Lunes',
+            'Tuesday':'Martes',
+            'Wednesday':'Miercoles',
+            'Thursday':'Jueves',
+            'Friday':'Viernes',
+            'Course':'Curso',
+            'Hour':'Hora',
+            'Section':'Sección',
         },
         en:{
             'registerS':'Student register',
             'registerT':'Advisor register',
-
         },
         br:{
             'registerS':'Registro estudantil',

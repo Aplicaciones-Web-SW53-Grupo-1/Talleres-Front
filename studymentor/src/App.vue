@@ -5,8 +5,8 @@ import RegisterStudent from "@/components/RegisterStudent.vue";
 
 <template>
 
-<RegisterStudent/>
-
+  <RegisterStudent/>
+  <Data/>
 </template>
 
 <style scoped>

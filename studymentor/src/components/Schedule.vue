@@ -15,14 +15,13 @@ export default{
 <template>
 
   <div class="container-schedule">
-    <a>Schedule: {{day}} </a>
+    <a> {{$t('Schedule')}}: {{$t(day)}}</a>
     <br>
-    <a>Course: </a>{{course}}
+    <a> {{$t('Course')}}: </a> {{course}}
     <br>
-    <a>Hour:</a>
-    {{hour }}
+    <a> {{$t('Hour')}}:</a> {{hour }}
     <br>
-    <a>Section:</a>
+    <a> {{$t('Section')}}:</a>
     {{section}}
   </div>
 
