@@ -8,7 +8,7 @@ const i18n =  createI18n({
     locale:'es',
     messages:{
         es:{
-            'registerS':'Registro del estudiante',
+            'registerS':'Registro del Estudiante',
             'registerT':'Registro del Tutor',
             'Schedule':'Horario',
             'Monday':'Lunes',
